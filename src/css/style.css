@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter";
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+}
+
+.main {
+  @apply bg-[#0A0C1B] lg:h-full flex justify-center lg:items-center;
+}
+
+.container {
+  @apply my-16 mx-4 flex flex-col w-full lg:flex-row lg:w-9/12 bg-[#1C1938] rounded-lg overflow-hidden;
+  /* max-height: 392px; */
+}
+
+.font-lexend-deca {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+.stats-text {
+  @apply uppercase text-gray-400 text-sm;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
